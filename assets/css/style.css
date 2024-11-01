@@ -53,6 +53,8 @@ header {
 .introduce {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .icon {
     display: grid;  
@@ -62,59 +64,139 @@ header {
     justify-content: center;
    
 }
+.services {
+    margin: 20px; 
+    background: rgba(248, 248, 248, 1); 
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+}
 .slider-container {
     width: 300px;
     margin: 50px auto;
 }
-/* bắt đầu từ đây là đoạn sử dụng cho thanh trượt */
-.slider-container {
+.border {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    width: 30px;
+    height: 10px;
+    margin: 2px;
+    color: rgba(217, 217, 217, 1);
+}
+.border2 {
+    background-color: rgba(253, 111, 0, 1);
+    ;
+    border-radius: 5px;
+    width: 30px;
+    height: 10px;
+    margin: 2px;
+    color: rgba(253, 111, 0, 1);
+}
+.image {
     width: 300px;
-    margin: 50px auto;
+    margin: 20px;
+}
+.email {
+    border: 2px solid rgb(159, 159, 159);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0.5rem 3rem;
+    color: rgba(121, 121, 121, 1);
+    background-color: rgb(246, 246, 246);
+}
+footer {
+    height: 240px;
+    background-color: rgb(230, 230, 230);
+}
+.footer2 {
+    text-align: center;
+    display: grid;
+    height: 50px;
+    color:white;
+    background-color: rgb(24, 24, 24);
+ }
+.flex {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.logo2 {
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+button {
+    padding: 0.2rem 0.5rem;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.slider-container {
+    width: 100%;          
+    position: relative;  
+    height: 10px;         
+    margin: 20px 0;        
 }
 
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
+.slider-track {
+    width: 80%;
+    height: 100%;
+    background-color: #f90;
+    border-radius: 5px;
+}
+
+.slider-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 8px;
-    background: linear-gradient(to right, orange 50%, #ddd 50%);
+    height: 100%;
+    background-color: #ddd;
     border-radius: 5px;
-    outline: none;
-    margin: 0;
-    transition: background 0.3s ease;
+    z-index: -1;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-    height: 8px;
-    border-radius: 5px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    background: orange;
-    border: 2px solid white;
+.slider-thumb {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #f90;
     border-radius: 50%;
-    cursor: pointer;
-    margin-top: -5px; 
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
-input[type="range"]::-moz-range-track {
-    height: 8px;
-    border-radius: 5px;
+.Testimonials {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
 }
-
-input[type="range"]::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    background: orange;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-    transform: translateY(-1px);
+.item {
+    display:flex;
+    min-width: 700px;
+    margin: 10px;
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
 }
-/* kết thúc thanh trượt cần thêm thời gian để nghiên cứu */
+.item img {
+    width: auto;
+    height:auto;
+}
+.item2 {
+    display:flex;
+    min-width: 325px;
+    margin: 10px;
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    opacity: 0.3;
+}
